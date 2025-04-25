@@ -42,10 +42,6 @@ Open your browser and navigate to http://localhost:5173 to view the application.
 
 ---
 
----
-
----
-
 ## ⚙️ Configuration
 
 You can configure and customize the crypto price tracker using the following files:
