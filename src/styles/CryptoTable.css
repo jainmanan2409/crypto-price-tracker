@@ -3,11 +3,10 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8fafc;
-  overflow: hidden; /* Prevent scrolling */
-  color: #1f2937; /* Slate-800 */
+  color: #1f2937; 
 }
 
-/* Page Wrapper */
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -17,7 +16,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Heading */
 .page-heading {
   font-size: 2rem;
   font-weight: 700;
@@ -108,11 +106,11 @@ body {
     display: block;
     width: 100%;
     overflow-x: auto;
-    font-size: 14px;
+    font-size: 0.75rem;
   }
 
   .crypto-table thead {
-    display: none; /* Optionally hide table headers on mobile */
+    display: none; 
   }
 
   .crypto-table tr {
@@ -141,5 +139,9 @@ body {
   .crypto-table img {
     width: 20px;
     height: 20px;
+  }
+
+  .crypto-table-container{
+    overflow-x: hidden;
   }
 }
