@@ -2,6 +2,8 @@
 
 A sleek, responsive React + TypeScript app to track real-time cryptocurrency data with live-updating prices, trends, and 7-day sparkline charts. Built for speed, clarity, and a delightful user experience.
 
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-blue?style=for-the-badge&logo=vercel)](https://crypto-price-tracker-six-xi.vercel.app/)
+
 ![Crypto Tracker Preview](public/preview.png)
 
 ---
@@ -15,6 +17,11 @@ A sleek, responsive React + TypeScript app to track real-time cryptocurrency dat
 | **Redux Toolkit**  | State management                       |
 | **Recharts**       | Charting for 7-day sparkline trends    |
 | **CSS (custom)**   | Styling with clean modern aesthetics   |
+
+---
+
+## 📱 Responsive Design
+The tracker is fully responsive and mobile-friendly. The layout adjusts gracefully with media queries and mobile-specific table rendering.
 
 ---
 
