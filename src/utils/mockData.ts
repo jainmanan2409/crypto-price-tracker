@@ -2,7 +2,7 @@ import { CryptoAsset } from "../types/crypto";
 
 export const mockCryptoData: CryptoAsset[] = [
   {
-    id: "btc",
+    id: "bitcoin", // ✅ CoinGecko-compatible ID
     name: "Bitcoin",
     symbol: "BTC",
     logo: "src/assets/bitcoin-btc-logo.svg",
@@ -14,11 +14,10 @@ export const mockCryptoData: CryptoAsset[] = [
     volume24h: 43874950947,
     circulatingSupply: 19.85,
     history7d: Array.from({ length: 20 }, () => 50500 + Math.random() * 500),
-
     chart: "/charts/btc.svg",
   },
   {
-    id: "eth",
+    id: "ethereum",
     name: "Ethereum",
     symbol: "ETH",
     logo: "src/assets/ethereum-eth-logo.svg",
@@ -30,11 +29,10 @@ export const mockCryptoData: CryptoAsset[] = [
     volume24h: 23547469307,
     circulatingSupply: 120.71,
     history7d: Array.from({ length: 20 }, () => 50500 + Math.random() * 500),
-
     chart: "/charts/eth.svg",
   },
   {
-    id: "usdt",
+    id: "tether",
     name: "Tether",
     symbol: "USDT",
     logo: "src/assets/tether-usdt-logo.svg",
@@ -46,11 +44,10 @@ export const mockCryptoData: CryptoAsset[] = [
     volume24h: 92288882007,
     circulatingSupply: 145.27,
     history7d: Array.from({ length: 20 }, () => 50500 + Math.random() * 500),
-
     chart: "/charts/usdt.svg",
   },
   {
-    id: "xrp",
+    id: "ripple", // ✅ CoinGecko ID for XRP
     name: "XRP",
     symbol: "XRP",
     logo: "src/assets/xrp-xrp-logo.svg",
@@ -62,11 +59,10 @@ export const mockCryptoData: CryptoAsset[] = [
     volume24h: 5131481491,
     circulatingSupply: 58.39,
     history7d: Array.from({ length: 20 }, () => 50500 + Math.random() * 500),
-
     chart: "/charts/xrp.svg",
   },
   {
-    id: "bnb",
+    id: "binancecoin", // ✅ CoinGecko ID for BNB
     name: "BNB",
     symbol: "BNB",
     logo: "src/assets/bnb-bnb-logo.svg",
@@ -78,11 +74,10 @@ export const mockCryptoData: CryptoAsset[] = [
     volume24h: 1874281784,
     circulatingSupply: 140.89,
     history7d: Array.from({ length: 20 }, () => 50500 + Math.random() * 500),
-
     chart: "/charts/bnb.svg",
   },
   {
-    id: "sol",
+    id: "solana",
     name: "Solana",
     symbol: "SOL",
     logo: "src/assets/solana-sol-logo.svg",

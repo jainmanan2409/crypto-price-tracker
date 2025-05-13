@@ -1,6 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { CryptoAsset } from "../types/crypto";
 import { mockCryptoData } from "../utils/mockData"
+import { fetchSparkline } from "./coinGecko";
 
 interface CryptoState {
   assets: CryptoAsset[];
@@ -34,6 +35,18 @@ const cryptoSlice = createSlice({
         };
       });
     },
+  },
+   extraReducers: (builder) => {
+    builder.addCase(fetchSparkline.fulfilled, (state, action: PayloadAction<{ id: string; price: number; history7d: number[] }>) => {
+      const { id, price, history7d } = action.payload;
+      console.log("✅ Sparkline Fetched:", action.payload); 
+      const index = state.assets.findIndex((coin) => coin.id === id);
+      if (index !== -1) {
+        state.assets[index].price = price;
+        state.assets[index].history7d = history7d;
+      }
+    
+    });
   },
 });
 
