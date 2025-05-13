@@ -4,6 +4,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8fafc;
   color: #1f2937; 
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
@@ -102,6 +104,16 @@ body {
 
 /* Responsive Table for Mobile */
 @media (max-width: 768px) {
+  .page-heading{
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+
+  .crypto-table-container {
+    padding: 0 0.5rem;
+  }
+
   .crypto-table {
     display: block;
     width: 100%;
@@ -139,9 +151,5 @@ body {
   .crypto-table img {
     width: 20px;
     height: 20px;
-  }
-
-  .crypto-table-container{
-    overflow-x: hidden;
   }
 }
