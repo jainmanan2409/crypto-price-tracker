@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import CryptoTable from "./components/CryptoTable";
 import PriceUpdater from "./components/PriceUpdater";
 import { fetchSparkline } from "./store/coinGecko";
-import { AppDispatch } from "./app/store";
+import { AppDispatch } from "./store/index";
 import './styles/CryptoTable.css';
 
 const App = () => {
