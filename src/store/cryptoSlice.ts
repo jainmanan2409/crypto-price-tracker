@@ -36,7 +36,7 @@ const cryptoSlice = createSlice({
       });
     },
   },
-   extraReducers: (builder) => {
+  extraReducers: (builder) => {
     builder.addCase(fetchSparkline.fulfilled, (state, action: PayloadAction<{ id: string; price: number; history7d: number[] }>) => {
       const { id, price, history7d } = action.payload;
       console.log("✅ Sparkline Fetched:", action.payload); 
